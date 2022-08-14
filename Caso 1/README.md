@@ -39,16 +39,16 @@ Después de recorrer todo el mapa, si no hubo ningún error, imprime un mensaje 
 Para probar el algoritmo se utilizaron dos mapas. Para los dos, el color 1 es amarillo, el 2 azul, el 3 verde y el 4 anaranjado. 
 
 El primero es el siguiente.
-
+![Primer ejemplo sin color](fourcolour2.png)
 
 Luego de colorearse con el algoritmo, queda así.
-
+![Primer ejemplo con color](fourcolour2_pintado.png)
 
 El segundo es así.
-
+![Segundo ejemplo sin color](Four_Colour_1.png)
 
 Luego de colorearse con el algoritmo, queda de esta manera.
-
+![Segundo ejemplo con color](Four_Colour_1_pintado.png)
 
 
 
