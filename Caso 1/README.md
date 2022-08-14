@@ -30,7 +30,7 @@ Luego, borra el color a liberar de la lista de colores usados de la región actu
 
 Finalmente, se cambia el color de la región adyacente por el nuevo y se actualizan las listas de adyacentes de las secciones contiguas a la misma adyacente, ya que si se necesita cambiar el color de estas, esas listas necesitan tener los datos más nuevos. Con esto se termina el ciclo.
 
-Después de cambiar los colores, vuelve a recorrer la lista de adyacentes y actualizar la lista de colores usados. Si después de la actualización el tamaño de la lista sigue siendo igual o mayor a la cantidad de colores, el mapa no se puede colorear y se despliegan todas las regiones adyacentes, sus colores, los colores usados y un mensaje de error. Esto es para que el usuario pueda ver qué fue lo que falló, si digitó mal el mapa o algún error similar.
+Después de cambiar los colores, vuelve a recorrer la lista de adyacentes y actualiza la lista de colores usados. Si después de la actualización el tamaño de la lista sigue siendo igual o mayor a la cantidad de colores, el mapa no se puede colorear y se despliegan todas las regiones adyacentes, sus colores, los colores usados y un mensaje de error. Esto es para que el usuario pueda ver qué fue lo que falló, si digitó mal el mapa o algún error similar.
 
 Para concluir, el algoritmo busca el primer color disponible y lo asigna a la región. Luego, actualiza las listas de adyacentes de cada sección adyacente a la región, para que cuando se les tenga que poner un color, no puedan tener el mismo color que se acaba de poner.
 
@@ -39,16 +39,22 @@ Después de recorrer todo el mapa, si no hubo ningún error, imprime un mensaje 
 Para probar el algoritmo se utilizaron dos mapas. Para los dos, el color 1 es amarillo, el 2 azul, el 3 verde y el 4 anaranjado. 
 
 El primero es el siguiente.
+
 ![Primer ejemplo sin color](fourcolor2.png)
 
 Luego de colorearse con el algoritmo, queda así.
+
 ![Primer ejemplo con color](fourcolor2_pintado.png)
 
 El segundo es así.
+
 ![Segundo ejemplo sin color](Four_Colour_1.png)
 
 Luego de colorearse con el algoritmo, queda de esta manera.
+
 ![Segundo ejemplo con color](Four_Colour_1_pintado.png)
+
+El código viene configurado con el ejemplo 2, pero si se quiere probar el uno, lo que hay que hacer es quitar los comentarios que hay desde la region a hasta la j, ponerle un comentario de bloque desde la declaración de la región k hasta la línea 215 y arreglar el vector del mapa para que solo llegue hasta la j.
 
 
 
