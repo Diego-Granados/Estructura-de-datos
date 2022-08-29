@@ -201,7 +201,8 @@ class Tarea{ // esta es la clase de tareas.
 
 # Habitación
 Esta es la clase que se usa para crear una habitación. Tiene el nombre y una lista para añadirle dispositivos. La función añadir dispositivosHab añade dispositivos a la lista.
-```class Habitacion{ // esta es la clase de habitaciones
+```
+class Habitacion{ // esta es la clase de habitaciones
     public:
         string name; // el nombre de la habitación
         Habitacion(string nombre){ // constructor de la habitación
@@ -219,7 +220,8 @@ Esta es la clase que se usa para crear una habitación. Tiene el nombre y una li
 
 # Ejecución
 Este es el programa que donde se demuestra cómo el usuario añadaría los dispositivos, las habitaciones, y las tareas.
-`List<TipoDispositivo> * dispositivos = new List<TipoDispositivo>;
+
+```List<TipoDispositivo> * dispositivos = new List<TipoDispositivo>;
 
 List<Habitacion> Casa;
 
@@ -303,7 +305,7 @@ int main(){
     BuenosDias.asignarDispositivos("sensor de puerta", "prender", dispositivos);
     BuenosDias.asignarDispositivos("camara cuarto", "prender", dispositivos);
 }
-`
+```
 
 Para este ejemplo, se crearon varios tipos de dispositivos, como Bombillo, Camara, CoffeeMaker, Horno, Parlante, Sensor de Humo y Sensor de Puerta. Cada uno tiene sus respectivas acciones y parámetros. También, se crearon dos habitaciones, cuarto y cocina y se les añadieron dispositivos. Se hicieron dos tareas, Buenos días y Buenas noches. 
 
@@ -312,7 +314,7 @@ Buenos días apaga las luces del cuarto, prende el coffee maker para hacer café
 Buenas noches apaga todas luces, prende la luz de dormir, apaga los dispositivos de comida y entretenimiento y prende los dispositivos de seguridad.
 
 Este es el resultado que da el programa.
-`
+```
 App 4Home
 
 Buenos días
