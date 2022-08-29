@@ -5,8 +5,9 @@
 Para solucionar el problema, utilicé varias clases y estructuras.
 
 # Nodo
-Esta clase se utiliza para almacenar los datos que pertenecen a la lista. Utiliza punteros para acceder a los datos en sí correctamente.  
-`
+Esta clase se utiliza para almacenar los datos que pertenecen a la lista. Utiliza punteros para acceder a los datos en sí correctamente.
+
+```
 template <class T>
 
 class Node {
@@ -37,11 +38,11 @@ class Node {
             this->next = pValue;
         }
 };
-`
+```
 
 # List
 Esta es la clase que se usa para crear las listas enlazadas. Sus elementos son los nodos del tipo necesario.
-`
+```
 template <class T>
 class List {
         
@@ -101,30 +102,30 @@ class List {
             }
         }
 };
-`
+```
 
 # Parameter
 En esta estructura almaceno los parámetros de cada dispositivo. Las acciones van a poder cambiar estos parámetros.
-`
+```
 struct tParameter {
     string name; // nombre del parametro
     string value; // valor del parametro
 };
-`
+```
 
 # Action
 Esta es la estructura que uso para crear las acciones. Tiene un nombre, el parámetro que modifica y el nuevo valor.
-`
+```
 struct tAction{
     string name;  // nombre de la acción
     string parameterName; // nombre del parámetro que cambia
     string newValue; // nuevo valor del parámetro que cambia.
 };
-`
+```
 
 # Tipo Dispositivo
 Esta clase es la que se usa como base para crear los tipos de dispositivo. Tiene el nombre, una lista con las acciones que el dispositivo puede reailzar, y la lista de parámetros que se pueden modificar. La función crearParámetros se usa para añadir parámetros a la lista. La función crearAcciones se usa para añadir acciones a la lista. Finalmente, la función realizarAccion lleva a cabo una de las acciones que tiene asignadas, la que se pase como parámetro.
-`
+```
 class TipoDispositivo{
     public:
         string name; // nombre del tipo de dispositivo.
@@ -160,11 +161,11 @@ class TipoDispositivo{
             cout << newParam->value << endl; // imprime el nuevo valor.
         }
 };
-`
+```
 
 # Tarea
 Esta clase es la que se usa para crear tareas. Tiene un nombre, una lista con los dispositivos que afecta y la lista de las acciones que realizan los dispositivos. La función asignarDispositivos se usa para añadir dispositivos a la lista y las acciones que tienen que realizar. Para que un dispositivo haga dos cosas, se tiene que añadir dos veces. La función realizarTarea lleva a cabo todas las acciones que tiene en la lista a los dispositivos respectivos. Las acciones no se realizan en el momento de asignación, sino hasta que se llame a esta función.
-`
+```
 class Tarea{ // esta es la clase de tareas.
     public:
         string name; // el nombre de la tarea
@@ -196,12 +197,11 @@ class Tarea{ // esta es la clase de tareas.
             }
         }
 };
-`
+```
 
 # Habitación
 Esta es la clase que se usa para crear una habitación. Tiene el nombre y una lista para añadirle dispositivos. La función añadir dispositivosHab añade dispositivos a la lista.
-`
-class Habitacion{ // esta es la clase de habitaciones
+```class Habitacion{ // esta es la clase de habitaciones
     public:
         string name; // el nombre de la habitación
         Habitacion(string nombre){ // constructor de la habitación
@@ -215,12 +215,11 @@ class Habitacion{ // esta es la clase de habitaciones
             dispositivosHab.add(dispositivo); // lo añade a la habitación
         }
 };
-`
+```
 
 # Ejecución
 Este es el programa que donde se demuestra cómo el usuario añadaría los dispositivos, las habitaciones, y las tareas.
-`
-List<TipoDispositivo> * dispositivos = new List<TipoDispositivo>;
+`List<TipoDispositivo> * dispositivos = new List<TipoDispositivo>;
 
 List<Habitacion> Casa;
 
@@ -359,6 +358,6 @@ sensor de puerta on
 
 camara cuarto
 camara off
-`
+```
 
 
